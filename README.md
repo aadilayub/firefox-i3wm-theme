@@ -26,3 +26,7 @@ cd chrome
 ```
 
 5. Copy the `userChrome.css` file from this repository to that folder
+
+---
+
+CSS based on [0xbiel's dotfiles](https://github.com/0xbiel/dotfiles/blob/master/userChrome.css)
