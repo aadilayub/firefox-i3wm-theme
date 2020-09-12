@@ -24,7 +24,7 @@ tab:not([selected="true"]) {
 }
 
 /* tab font */
-tab { font-family: monospace; }
+tab { font-family: 'Jetbrains Mono', monospace; }
 
 /* safari style tab width */	
 .tabbrowser-tab[fadein]{ max-width: 100vw !important }
