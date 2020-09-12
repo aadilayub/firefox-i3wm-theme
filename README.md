@@ -8,9 +8,9 @@ A theme for Firefox meant to emulate [qutebrowser](http://qutebrowser) and integ
 
 Before installing the theme:
 
-1. Install the [Tridactyl](https://addons.mozilla.org/en-US/firefox/addon/tridactyl-vim/) firefox extension
+- Install the [Tridactyl](https://addons.mozilla.org/en-US/firefox/addon/tridactyl-vim/) firefox extension
 
-2. Go in the "Customize" section of firefox and remove the new tab button from the navigation bar, and also set "Density" to "Compact".
+- Go in the "Customize" section of firefox and remove the new tab button from the navigation bar, and also set "Density" to "Compact".
 
 To install the theme:
 
