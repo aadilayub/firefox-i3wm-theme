@@ -2,7 +2,7 @@
 
 ![](screenshot.png)
 
-A theme for Firefox meant to emulate [qutebrowser](http://qutebrowser) and integrate aesthetically with the i3 window manager default colorscheme.
+A theme for Firefox meant to emulate [qutebrowser](http://qutebrowser) and integrate with the i3 window manager.
 
 ## Install & configuration instructions
 
