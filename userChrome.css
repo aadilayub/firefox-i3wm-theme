@@ -1,0 +1,73 @@
+@namespace "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* Hide close button on tabs */
+#tabbrowser-tabs .tabbrowser-tab .tab-close-button { display:none !important; }
+
+#TabsToolbar, .tabbrowser-tab {
+  max-height: 20px !important;
+  font-size: 11px;
+}
+
+:root:not([customizing]) #TabsToolbar{
+  background-color: #000000;
+}
+
+:root:not([customizing]) #navigator-toolbox {
+  background-color: #000000 !important;
+}
+
+/* Change color of normal tabs */
+
+tab:not([selected="true"]) { 
+  background-color: #222222 !important;
+  color: #888888 !important;
+}
+
+/* tab font */
+tab { font-family: monospace; }
+
+/* safari style tab width */	
+.tabbrowser-tab[fadein]{ max-width: 100vw !important }
+
+/* hide url bar */
+#nav-bar { visibility: collapse; }
+
+/* hide tab bar if only one tab open */
+tab:only-of-type { display: none; }
+
+/* remove min-height from tabs toolbar (needed for fullscreen one tab) */
+#TabsToolbar, #tabbrowser-tabs, #tabbrowser-tabs > .tabbrowser-arrowscrollbox, #tabbrowser-arrowscrollbox {
+  min-height: 0 !important; 
+}
+
+/* Tab: selected colors */
+
+#tabbrowser-tabs .tabbrowser-tab[selected] .tab-content { 
+  background: #285577 !important;
+  color: #ffffff !important;
+}
+
+/* Tab: hovered colors */
+
+#tabbrowser-tabs .tabbrowser-tab:hover:not([selected]) .tab-content {
+  background: #285577 !important;
+  color: #ffffff !important;
+}
+
+
+/*AGENT_SHEET*/
+#main-window #navigator-toolbox #TabsToolbar:not(:-moz-lwtheme){
+  background: #285577 !important;
+}
+
+/* hide favicons */
+.tabbrowser-tab .tab-icon-image {
+  display: none !important;
+}
+
+/* show favicon if tab is pinned */
+.tabbrowser-tab[pinned] .tab-icon-image {
+  display: inline !important;
+}
+
+
