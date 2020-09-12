@@ -12,6 +12,8 @@ Before installing the theme:
 
 - Go in the "Customize" section of firefox and remove the new tab button from the navigation bar, and also set "Density" to "Compact".
 
+- [Enable userChrome.css in about:config](https://www.youtube.com/watch?v=levqpofIJ_k&feature=youtu.be)
+
 To install the theme:
 
 1. Go to `about:support` in Firefox.
@@ -28,6 +30,9 @@ cd chrome
 ```
 
 5. Copy the `userChrome.css` file from this repository to that folder
+
+
+For best results, install the [Jetbrains Mono](https://www.jetbrains.com/lp/mono/) font
 
 ---
 
