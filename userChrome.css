@@ -185,6 +185,7 @@ tab { font-family: 'Jetbrains Mono', monospace; }
 
   #urlbar-input-container {
     border-width: 0 !important;
+    margin-left: 1em !important;
   }
 
   #urlbar-input {
@@ -209,17 +210,17 @@ tab { font-family: 'Jetbrains Mono', monospace; }
     width: 1em !important;
     margin-bottom: 0.2em !important;
   }
-
+  
 /* debloat urlbar */
   #tracking-protection-icon-container { display: none; }
 
   #identity-box { display: none; }
 
-  /* #reader-mode-button { display: none; } */
+  #reader-mode-button { display: none; }
 
   #pageActionButton { display: none; }
 
-  /* #pocket-button { display: none; } */
+  #pocket-button { display: none; }
 
   #star-button { display: none; }
 
