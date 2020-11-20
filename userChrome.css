@@ -16,6 +16,9 @@
   background-color: #000000 !important;
 }
 
+/* Hide window controls on fullscreen */
+#window-controls { display: none; }
+
 /* Change color of normal tabs */
 
 tab:not([selected="true"]) { 
@@ -29,8 +32,206 @@ tab { font-family: 'Jetbrains Mono', monospace; }
 /* safari style tab width */	
 .tabbrowser-tab[fadein]{ max-width: 100vw !important }
 
-/* hide url bar */
-#nav-bar { visibility: collapse; }
+/* hide nav bar */
+/* #nav-bar { visibility: collapse; } */
+
+/* auto-hide nav-bar (nav-bar shows when F6 is pressed)*/
+  #navigator-toolbox {
+    -moz-appearance: none;
+    background-color: transparent !important;
+    border-top: none;
+  }
+  .browser-toolbar:not(.titlebar-color),
+  #tabbrowser-tabs:not([movingtab])
+    > .tabbrowser-arrowscrollbox
+    > .tabbrowser-tab
+    > .tab-stack
+    > .tab-background[multiselected='true']:-moz-lwtheme,
+  #tabbrowser-tabs:not([movingtab])
+    > .tabbrowser-arrowscrollbox
+    > .tabbrowser-tab
+    > .tab-stack
+    > .tab-background[selected='true']:-moz-lwtheme,
+  * {
+    --tab-line-color: var(--color1);
+    --tab-min-width: 76px;
+  }
+  #urlbar, #navigator-toolbox #searchbar {border: none !important;}
+
+  #urlbar:not(.megabar):not([focused='true']):-moz-lwtheme,
+  #urlbar.megabar:not([focused='true']):-moz-lwtheme > #urlbar-background,
+  #navigator-toolbox #searchbar:not(:focus-within):-moz-lwtheme,
+  #navigator-toolbox {
+    border: none !important;
+  }
+  #urlbar:not(.megabar):-moz-lwtheme,
+  #urlbar.megabar:-moz-lwtheme > #urlbar-background,
+  #navigator-toolbox #searchbar:-moz-lwtheme {
+    background-color: var(--background) !important;
+  }
+  #navigator-toolbox {
+    --tabs-border-color: var(--background) !important;
+  }
+
+  toolbox {
+    z-index: 10;
+    margin-top: 0px !important;
+    margin-bottom: -30px !important;
+    height: 0 !important;
+    pointer-events: none;
+  }
+  vbox {pointer-events: all;}
+
+
+  #nav-bar {
+    opacity: 0;
+    transform-origin: 0 0;
+    pointer-events: none;
+    transition: transform, ease-in-out 0.2s, opacity 0.2s ease-in-out !important;
+  }
+  /* All the states in which the URL bar is visible */
+  vbox:hover ~ #nav-bar, toolbox:focus-within > #nav-bar, #nav-bar:hover, #mainPopupSet:hover ~ box #nav-bar, #mainPopupSet:focus-within ~ box #nav-bar {
+    opacity: 1;
+    transform: none;
+    pointer-events: all;
+  }
+
+/* end auto hide nav-bar */
+
+/* debloat navbar */
+
+  #back-button { display: none; }
+
+  #forward-button { display: none; }
+
+  #reload-button { display: none; }
+
+  #stop-button { display: none; }
+
+  #home-button { display: none; }
+
+  #downloads-button { display: none; }
+
+  #library-button { display: none; }
+
+  #sidebar-button { display: none; }
+
+  /* Firefox account button */
+  #fxa-toolbar-menu-button { display: none; }
+
+  #nav-bar-overflow-button { display: none !important; }
+
+  /* General Firefox menu button */
+  #PanelUI-button { display: none; }
+
+  /* Empty space before and after the url bar */
+  #customizableui-special-spring1,
+  #customizableui-special-spring2 { display: none; }
+  /* style navbar */
+  #nav-bar,
+  #navigator-toolbox {
+    border-width: 0 !important;
+  }
+
+/* end debloat navbar */
+
+/* remove megabar */
+  /* https://github.com/WesleyBranton/Remove-Firefox-Megabar/blob/master/remove_megabar.css */
+  
+  /* REMOVE MEGABAR START
+   * VERSION 1.0.4
+   * CODE AT: http://userchrome.wesleybranton.com/megabar
+   * RELEASE NOTES: http://userchrome.wesleybranton.com/notes/megabar */
+  @-moz-document url(chrome://browser/content/browser.xhtml) {
+      /* DISABLE EXPANDING START */
+      #urlbar[breakout][breakout-extend] {
+          top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+          left: 0 !important;
+          width: 100% !important;
+      }
+  
+      #urlbar[breakout][breakout-extend] > #urlbar-input-container {
+          height: var(--urlbar-height) !important;
+          padding-block: 0 !important;
+          padding-inline: 0 !important;
+      }
+      /* DISABLE EXPANDING END */
+  }
+  /* REMOVE MEGABAR END */
+
+/*  */
+
+/* style urlbar */
+  #urlbar-container {
+    --urlbar-container-height: var(--tab-min-height) !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    font-family: 'Jetbrains Mono', monospace;
+    font-size: 11px;
+  }
+
+  #urlbar {
+    --urlbar-height: var(--tab-min-height) !important;
+    --urlbar-toolbar-height: var(--tab-min-height) !important;
+    min-height: var(--tab-min-height) !important;
+  }
+
+  #urlbar-background {
+    border-width: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  #urlbar-input-container {
+    border-width: 0 !important;
+  }
+
+  #urlbar-input {
+    margin-left: 0.4em !important;
+    margin-right: 0.4em !important;
+  }
+
+  .urlbarView-row {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: var(--urlbar-height) !important;
+  }
+
+  .urlbarView-row-inner {
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
+    height: var(--urlbar-height) !important;
+  }
+
+  .urlbarView-favicon {
+    height: 1em !important;
+    width: 1em !important;
+    margin-bottom: 0.2em !important;
+  }
+
+/* debloat urlbar */
+  #tracking-protection-icon-container { display: none; }
+
+  #identity-box { display: none; }
+
+  /* #reader-mode-button { display: none; } */
+
+  #pageActionButton { display: none; }
+
+  /* #pocket-button { display: none; } */
+
+  #star-button { display: none; }
+
+  #urlbar-zoom-button { display: none; }
+
+  /* Go to arrow button at the end of the urlbar when searching */
+  #urlbar-go-button { display: none; }
+
+  /* Bottom left page loading status or url preview */
+  #statuspanel { display: none !important; }
+/* end debloat urlbar */
+
 
 /* hide tab bar if only one tab open */
 tab:only-of-type { display: none; }
@@ -69,5 +270,3 @@ tab:only-of-type { display: none; }
 .tabbrowser-tab[pinned] .tab-icon-image {
   display: inline !important;
 }
-
-
