@@ -1,3 +1,4 @@
+
 @namespace "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 /* Hide close button on tabs */
@@ -24,13 +25,14 @@
 tab:not([selected="true"]) { 
   background-color: #222222 !important;
   color: #888888 !important;
+  border: none;
 }
 
 /* tab font */
-tab { font-family: 'Jetbrains Mono', monospace; }
+tab { font-family: 'Jetbrains Mono', monospace; border: none; }
 
-/* safari style tab width */	
-.tabbrowser-tab[fadein]{ max-width: 100vw !important }
+/* safari style tab width */  
+.tabbrowser-tab[fadein]{ max-width: 100vw !important; border: none }
 
 /* hide nav bar */
 /* #nav-bar { visibility: collapse; } */
@@ -53,8 +55,8 @@ tab { font-family: 'Jetbrains Mono', monospace; }
     > .tab-stack
     > .tab-background[selected='true']:-moz-lwtheme,
   * {
-    --tab-line-color: var(--color1);
-    --tab-min-width: 76px;
+    /* --tab-line-color: var(--color1); */
+    /* --tab-min-width: 76px; */
   }
   #urlbar, #navigator-toolbox #searchbar {border: none !important;}
 
@@ -90,7 +92,7 @@ tab { font-family: 'Jetbrains Mono', monospace; }
     transition: transform, ease-in-out 0.2s, opacity 0.2s ease-in-out !important;
   }
   /* All the states in which the URL bar is visible */
-  vbox:hover ~ #nav-bar, toolbox:focus-within > #nav-bar, #nav-bar:hover, #mainPopupSet:hover ~ box #nav-bar, #mainPopupSet:focus-within ~ box #nav-bar {
+  toolbox:focus-within > #nav-bar {
     opacity: 1;
     transform: none;
     pointer-events: all;
@@ -247,6 +249,7 @@ tab:only-of-type { display: none; }
 #tabbrowser-tabs .tabbrowser-tab[selected] .tab-content { 
   background: #285577 !important;
   color: #ffffff !important;
+  border: none !important;
 }
 
 /* Tab: hovered colors */
@@ -256,6 +259,11 @@ tab:only-of-type { display: none; }
   color: #ffffff !important;
 }
 
+/* remove white margin around active tabs */
+#tabbrowser-tabs:not([movingtab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[beforeselected-visible]::after, #tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[visuallyselected]::before,
+.tabbrowser-tab[visuallyselected]::after {
+  border: none !important;
+}
 
 /*AGENT_SHEET*/
 #main-window #navigator-toolbox #TabsToolbar:not(:-moz-lwtheme){
@@ -271,3 +279,6 @@ tab:only-of-type { display: none; }
 .tabbrowser-tab[pinned] .tab-icon-image {
   display: inline !important;
 }
+
+/* hide window controls */
+.titlebar-buttonbox-container { display: none; }
