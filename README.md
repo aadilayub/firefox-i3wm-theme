@@ -36,4 +36,4 @@ For best results, install the [Jetbrains Mono](https://www.jetbrains.com/lp/mono
 
 ---
 
-CSS based on [0xbiel's dotfiles](https://github.com/0xbiel/dotfiles/blob/master/userChrome.css)
+CSS based on [0xbiel](https://github.com/0xbiel/)'s dotfiles
