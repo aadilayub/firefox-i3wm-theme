@@ -10,7 +10,7 @@ Before installing the theme:
 
 - Install the [Tridactyl](https://addons.mozilla.org/en-US/firefox/addon/tridactyl-vim/) firefox extension
 
-- Go in the "Customize" section of firefox and remove the new tab button from the navigation bar, and also set "Density" to "Compact".
+- Go in the "Customize" section of firefox and set "Density" to "Compact".
 
 - [Enable userChrome.css in about:config](https://www.youtube.com/watch?v=levqpofIJ_k&feature=youtu.be)
 
