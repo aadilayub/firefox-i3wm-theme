@@ -9,6 +9,11 @@
   font-size: 11px;
 }
 
+#titlebar {
+  --tab-min-height: 20px !important;
+  --proton-tab-block-margin: 0px !important;
+}
+
 :root:not([customizing]) #TabsToolbar{
   background-color: #000000;
 }
