@@ -36,4 +36,4 @@ For best results, install the [Jetbrains Mono](https://www.jetbrains.com/lp/mono
 
 ---
 
-CSS based on [0xbiel](https://github.com/0xbiel/)'s dotfiles
+CSS based on [0xbiel](https://git.b-ap.xyz/)'s dotfiles
