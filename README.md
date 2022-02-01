@@ -1,5 +1,5 @@
 ```
-this theme is no longer maintained, as I don't daily drive i3wm anymore. I may update it in the feature.
+this theme is no longer maintained, as I don't daily drive i3wm anymore. I may update it in the future.
 ```
 
 
