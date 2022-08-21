@@ -12,7 +12,7 @@ Before installing the theme:
 
 - in `about:config` set `browser.compactmode.show` to true
 
-- Go in the "Customize" section of firefox and set "Density" to "Compact".
+- Go in the "Customize" section of firefox and set "Density" to "Compact", and remove the new tab button
 
 - [Enable userChrome.css in about:config](https://www.youtube.com/watch?v=levqpofIJ_k&feature=youtu.be)
 
