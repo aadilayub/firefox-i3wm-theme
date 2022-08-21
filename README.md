@@ -9,7 +9,7 @@ A theme for Firefox meant to emulate [qutebrowser](http://qutebrowser.org) and i
 Before installing the theme:
 
 - Install the [Tridactyl](https://addons.mozilla.org/en-US/firefox/addon/tridactyl-vim/) firefox extension
-- 
+
 - in `about:config` set `browser.compactmode.show` to true
 
 - Go in the "Customize" section of firefox and set "Density" to "Compact".
