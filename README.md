@@ -1,5 +1,3 @@
-This theme is no longer maintained, as I don't daily drive i3wm anymore. I may update it in the future.
-
 # Firefox i3 Theme
 
 ![](screenshot.png)
