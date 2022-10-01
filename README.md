@@ -38,4 +38,4 @@ For best results, install the [Jetbrains Mono](https://www.jetbrains.com/lp/mono
 
 CSS based on [0xbiel](https://git.b-ap.xyz/)'s dotfiles
 
-Updates to make the theme compatible with Firefox 100+ made possibly by [Dook97's fork](https://github.com/Dook97/firefox-qutebrowser-userchrome)
+Updates to make the theme compatible with Firefox 100+ made possible by [Dook97's fork](https://github.com/Dook97/firefox-qutebrowser-userchrome)
