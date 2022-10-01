@@ -1,5 +1,3 @@
-# Firefox i3 Theme
-
 ![](screenshot.png)
 
 A theme for Firefox meant to emulate [qutebrowser](http://qutebrowser.org) and integrate with the i3 window manager.
