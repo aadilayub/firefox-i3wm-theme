@@ -21,6 +21,10 @@
 
 /* --- DEBLOAT NAVBAR ----------------------------------- */
 
+#unified-extensions-button {
+    display: none;
+}
+
 #back-button {
 	display: none;
 }
