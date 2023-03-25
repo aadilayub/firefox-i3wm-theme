@@ -71,6 +71,10 @@
 	display: none;
 }
 
+#private-browsing-indicator-with-label {
+    display: none;
+}
+
 /* Empty space before and after the url bar */
 #customizableui-special-spring1,
 #customizableui-special-spring2 {
