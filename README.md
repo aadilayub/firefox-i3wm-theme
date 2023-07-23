@@ -1,6 +1,9 @@
-![](screenshot.png)
+```
+⚠️ this theme is no longer actively maintained
+```
 
-> ⚠️ this theme is no longer actively maintained since I've stopped using i3wm
+
+![](screenshot.png)
 
 A theme for Firefox meant to emulate [qutebrowser](http://qutebrowser.org) and integrate with the i3 window manager.
 
