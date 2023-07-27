@@ -1,6 +1,4 @@
-```
-⚠️ this theme is no longer actively maintained
-```
+⚠️ this theme is no longer actively maintained, try [Dook97's fork](https://github.com/Dook97/firefox-qutebrowser-userchrome)
 
 
 ![](screenshot.png)
